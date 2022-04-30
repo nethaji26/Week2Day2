@@ -18,9 +18,10 @@ public class Assignment3 {
 		driver.manage().window().maximize();
 		Thread.sleep(10000);
 		WebElement element = driver.findElement(By.id("input-country"));
+		element.click();
 		Select dropdown = new Select(element);
-		dropdown.selectByIndex(1);
-		//dropdown.selectByValue("2");
+		//dropdown.selectByIndex(1);
+		dropdown.selectByValue("2");
 		//dropdown.selectByVisibleText("Algeria");
 		driver.close();
 		
